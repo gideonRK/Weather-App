@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E06E8A02D44FB7400B8630E /* Craft_SiliconApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E89F2D44FB7400B8630E /* Craft_SiliconApp.swift */; };
+		5E06E8A42D44FB7600B8630E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06E8A32D44FB7600B8630E /* Assets.xcassets */; };
+		5E06E8A72D44FB7600B8630E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06E8A62D44FB7600B8630E /* Preview Assets.xcassets */; };
+		5E06E8B12D44FB7600B8630E /* Craft_SiliconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8B02D44FB7600B8630E /* Craft_SiliconTests.swift */; };
+		5E06E8BB2D44FB7600B8630E /* Craft_SiliconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8BA2D44FB7600B8630E /* Craft_SiliconUITests.swift */; };
+		5E06E8BD2D44FB7600B8630E /* Craft_SiliconUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8BC2D44FB7600B8630E /* Craft_SiliconUITestsLaunchTests.swift */; };
+		5E06E8D02D44FD0B00B8630E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8CF2D44FD0B00B8630E /* Constants.swift */; };
+		5E06E8DE2D45049900B8630E /* WeatherRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8DD2D45049900B8630E /* WeatherRemoteDataSource.swift */; };
+		5E06E8E02D450C4100B8630E /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8DF2D450C4100B8630E /* WeatherResponse.swift */; };
+		5E06E8E32D450D8B00B8630E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8E22D450D8B00B8630E /* APIError.swift */; };
+		5E06E8E52D450E4A00B8630E /* HttpUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8E42D450E4A00B8630E /* HttpUtils.swift */; };
+		5E06E8E72D45173D00B8630E /* ErrorMapperUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8E62D45173D00B8630E /* ErrorMapperUtils.swift */; };
+		5E06E8E92D4518DD00B8630E /* GetWeatherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8E82D4518DD00B8630E /* GetWeatherProtocol.swift */; };
+		5E06E8EB2D45192D00B8630E /* GetWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8EA2D45192D00B8630E /* GetWeatherRepository.swift */; };
+		5E06E8ED2D451A0700B8630E /* GetWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8EC2D451A0700B8630E /* GetWeatherUseCase.swift */; };
+		5E06E8EF2D451AF300B8630E /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8EE2D451AF300B8630E /* WeatherViewModel.swift */; };
+		5E06E8F12D451BFB00B8630E /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8F02D451BFB00B8630E /* FetchState.swift */; };
+		5E06E8F32D451EF000B8630E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8F22D451EF000B8630E /* HomeView.swift */; };
+		5E06E8F52D451F7400B8630E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8F42D451F7400B8630E /* RootView.swift */; };
+		5E06E8F82D45234900B8630E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8F72D45234900B8630E /* View.swift */; };
+		5E06E8FA2D455ADD00B8630E /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E8F92D455ADD00B8630E /* UtilFunctions.swift */; };
+		5E06E9062D4675FE00B8630E /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E06E9042D4675FE00B8630E /* CoreDataModel.xcdatamodeld */; };
+		A35E590C2D464C1D00DC355F /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E590B2D464C1D00DC355F /* CoreDataError.swift */; };
+		A35E590D2D464C1D00DC355F /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E590B2D464C1D00DC355F /* CoreDataError.swift */; };
+		A35E590E2D464C1D00DC355F /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E590B2D464C1D00DC355F /* CoreDataError.swift */; };
+		A35E59112D464D3700DC355F /* WeatherLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E59102D464D3700DC355F /* WeatherLocalDataSource.swift */; };
+		A35E59122D464D3700DC355F /* WeatherLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E59102D464D3700DC355F /* WeatherLocalDataSource.swift */; };
+		A35E59132D464D3700DC355F /* WeatherLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E59102D464D3700DC355F /* WeatherLocalDataSource.swift */; };
+		A35E59162D464D7900DC355F /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E59152D464D7900DC355F /* CoreDataProvider.swift */; };
+		A35E59172D464D7900DC355F /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E59152D464D7900DC355F /* CoreDataProvider.swift */; };
+		A35E59182D464D7900DC355F /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E59152D464D7900DC355F /* CoreDataProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E06E8AD2D44FB7600B8630E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E06E8942D44FB7400B8630E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E06E89B2D44FB7400B8630E;
+			remoteInfo = "Craft Silicon";
+		};
+		5E06E8B72D44FB7600B8630E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E06E8942D44FB7400B8630E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E06E89B2D44FB7400B8630E;
+			remoteInfo = "Craft Silicon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E06E89C2D44FB7400B8630E /* Craft Silicon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Craft Silicon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E06E89F2D44FB7400B8630E /* Craft_SiliconApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Craft_SiliconApp.swift; sourceTree = "<group>"; };
+		5E06E8A32D44FB7600B8630E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E06E8A62D44FB7600B8630E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E06E8AC2D44FB7600B8630E /* Craft SiliconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Craft SiliconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E06E8B02D44FB7600B8630E /* Craft_SiliconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Craft_SiliconTests.swift; sourceTree = "<group>"; };
+		5E06E8B62D44FB7600B8630E /* Craft SiliconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Craft SiliconUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E06E8BA2D44FB7600B8630E /* Craft_SiliconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Craft_SiliconUITests.swift; sourceTree = "<group>"; };
+		5E06E8BC2D44FB7600B8630E /* Craft_SiliconUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Craft_SiliconUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E06E8CF2D44FD0B00B8630E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E06E8DD2D45049900B8630E /* WeatherRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRemoteDataSource.swift; sourceTree = "<group>"; };
+		5E06E8DF2D450C4100B8630E /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		5E06E8E22D450D8B00B8630E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5E06E8E42D450E4A00B8630E /* HttpUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtils.swift; sourceTree = "<group>"; };
+		5E06E8E62D45173D00B8630E /* ErrorMapperUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMapperUtils.swift; sourceTree = "<group>"; };
+		5E06E8E82D4518DD00B8630E /* GetWeatherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherProtocol.swift; sourceTree = "<group>"; };
+		5E06E8EA2D45192D00B8630E /* GetWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherRepository.swift; sourceTree = "<group>"; };
+		5E06E8EC2D451A0700B8630E /* GetWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherUseCase.swift; sourceTree = "<group>"; };
+		5E06E8EE2D451AF300B8630E /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		5E06E8F02D451BFB00B8630E /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
+		5E06E8F22D451EF000B8630E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5E06E8F42D451F7400B8630E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		5E06E8F72D45234900B8630E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5E06E8F92D455ADD00B8630E /* UtilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFunctions.swift; sourceTree = "<group>"; };
+		5E06E9052D4675FE00B8630E /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A35E590B2D464C1D00DC355F /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		A35E59102D464D3700DC355F /* WeatherLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocalDataSource.swift; sourceTree = "<group>"; };
+		A35E59152D464D7900DC355F /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E06E8992D44FB7400B8630E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E06E8A92D44FB7600B8630E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E06E8B32D44FB7600B8630E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E06E8932D44FB7400B8630E = {
+			isa = PBXGroup;
+			children = (
+				5E06E9042D4675FE00B8630E /* CoreDataModel.xcdatamodeld */,
+				5E06E89E2D44FB7400B8630E /* Craft Silicon */,
+				5E06E8AF2D44FB7600B8630E /* Craft SiliconTests */,
+				5E06E8B92D44FB7600B8630E /* Craft SiliconUITests */,
+				5E06E89D2D44FB7400B8630E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E06E89D2D44FB7400B8630E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E89C2D44FB7400B8630E /* Craft Silicon.app */,
+				5E06E8AC2D44FB7600B8630E /* Craft SiliconTests.xctest */,
+				5E06E8B62D44FB7600B8630E /* Craft SiliconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E06E89E2D44FB7400B8630E /* Craft Silicon */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8CD2D44FCBD00B8630E /* Core */,
+				5E06E8CB2D44FBC300B8630E /* App */,
+				5E06E8CA2D44FBAB00B8630E /* Features */,
+				5E06E8C92D44FB9E00B8630E /* Root */,
+				5E06E8A32D44FB7600B8630E /* Assets.xcassets */,
+				5E06E8A52D44FB7600B8630E /* Preview Content */,
+			);
+			path = "Craft Silicon";
+			sourceTree = "<group>";
+		};
+		5E06E8A52D44FB7600B8630E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8A62D44FB7600B8630E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E06E8AF2D44FB7600B8630E /* Craft SiliconTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8B02D44FB7600B8630E /* Craft_SiliconTests.swift */,
+			);
+			path = "Craft SiliconTests";
+			sourceTree = "<group>";
+		};
+		5E06E8B92D44FB7600B8630E /* Craft SiliconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8BA2D44FB7600B8630E /* Craft_SiliconUITests.swift */,
+				5E06E8BC2D44FB7600B8630E /* Craft_SiliconUITestsLaunchTests.swift */,
+			);
+			path = "Craft SiliconUITests";
+			sourceTree = "<group>";
+		};
+		5E06E8C92D44FB9E00B8630E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8F42D451F7400B8630E /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5E06E8CA2D44FBAB00B8630E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8CC2D44FC7C00B8630E /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5E06E8CB2D44FBC300B8630E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E89F2D44FB7400B8630E /* Craft_SiliconApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5E06E8CC2D44FC7C00B8630E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8D32D4503A900B8630E /* Presentation */,
+				5E06E8D22D4503A300B8630E /* Domain */,
+				5E06E8D12D45039800B8630E /* Data */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5E06E8CD2D44FCBD00B8630E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A35E59142D464D7300DC355F /* Providers */,
+				5E06E8F62D45233000B8630E /* Extensions */,
+				5E06E8E12D450D7900B8630E /* Models */,
+				5E06E8CE2D44FCF800B8630E /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5E06E8CE2D44FCF800B8630E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8CF2D44FD0B00B8630E /* Constants.swift */,
+				5E06E8E42D450E4A00B8630E /* HttpUtils.swift */,
+				5E06E8E62D45173D00B8630E /* ErrorMapperUtils.swift */,
+				5E06E8F92D455ADD00B8630E /* UtilFunctions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E06E8D12D45039800B8630E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8D92D45041200B8630E /* Repository */,
+				5E06E8D82D45040D00B8630E /* Models */,
+				5E06E8D72D45040200B8630E /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5E06E8D22D4503A300B8630E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8D62D4503DB00B8630E /* UseCases */,
+				5E06E8D52D4503D400B8630E /* Repository */,
+				5E06E8D42D4503CE00B8630E /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5E06E8D32D4503A900B8630E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8DB2D45043800B8630E /* ViewModel */,
+				5E06E8DA2D45042D00B8630E /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5E06E8D42D4503CE00B8630E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5E06E8D52D4503D400B8630E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8E82D4518DD00B8630E /* GetWeatherProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5E06E8D62D4503DB00B8630E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8EC2D451A0700B8630E /* GetWeatherUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5E06E8D72D45040200B8630E /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A35E590F2D464D1200DC355F /* Local */,
+				5E06E8DC2D45047300B8630E /* Remote */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		5E06E8D82D45040D00B8630E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8DF2D450C4100B8630E /* WeatherResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E06E8D92D45041200B8630E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8EA2D45192D00B8630E /* GetWeatherRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5E06E8DA2D45042D00B8630E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8F22D451EF000B8630E /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E06E8DB2D45043800B8630E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8EE2D451AF300B8630E /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5E06E8DC2D45047300B8630E /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8DD2D45049900B8630E /* WeatherRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		5E06E8E12D450D7900B8630E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8E22D450D8B00B8630E /* APIError.swift */,
+				5E06E8F02D451BFB00B8630E /* FetchState.swift */,
+				A35E590B2D464C1D00DC355F /* CoreDataError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E06E8F62D45233000B8630E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E06E8F72D45234900B8630E /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A35E590F2D464D1200DC355F /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				A35E59102D464D3700DC355F /* WeatherLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		A35E59142D464D7300DC355F /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				A35E59152D464D7900DC355F /* CoreDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E06E89B2D44FB7400B8630E /* Craft Silicon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E06E8C02D44FB7600B8630E /* Build configuration list for PBXNativeTarget "Craft Silicon" */;
+			buildPhases = (
+				5E06E8982D44FB7400B8630E /* Sources */,
+				5E06E8992D44FB7400B8630E /* Frameworks */,
+				5E06E89A2D44FB7400B8630E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Craft Silicon";
+			productName = "Craft Silicon";
+			productReference = 5E06E89C2D44FB7400B8630E /* Craft Silicon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E06E8AB2D44FB7600B8630E /* Craft SiliconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E06E8C32D44FB7600B8630E /* Build configuration list for PBXNativeTarget "Craft SiliconTests" */;
+			buildPhases = (
+				5E06E8A82D44FB7600B8630E /* Sources */,
+				5E06E8A92D44FB7600B8630E /* Frameworks */,
+				5E06E8AA2D44FB7600B8630E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E06E8AE2D44FB7600B8630E /* PBXTargetDependency */,
+			);
+			name = "Craft SiliconTests";
+			productName = "Craft SiliconTests";
+			productReference = 5E06E8AC2D44FB7600B8630E /* Craft SiliconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E06E8B52D44FB7600B8630E /* Craft SiliconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E06E8C62D44FB7600B8630E /* Build configuration list for PBXNativeTarget "Craft SiliconUITests" */;
+			buildPhases = (
+				5E06E8B22D44FB7600B8630E /* Sources */,
+				5E06E8B32D44FB7600B8630E /* Frameworks */,
+				5E06E8B42D44FB7600B8630E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E06E8B82D44FB7600B8630E /* PBXTargetDependency */,
+			);
+			name = "Craft SiliconUITests";
+			productName = "Craft SiliconUITests";
+			productReference = 5E06E8B62D44FB7600B8630E /* Craft SiliconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E06E8942D44FB7400B8630E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5E06E89B2D44FB7400B8630E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5E06E8AB2D44FB7600B8630E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5E06E89B2D44FB7400B8630E;
+					};
+					5E06E8B52D44FB7600B8630E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5E06E89B2D44FB7400B8630E;
+					};
+				};
+			};
+			buildConfigurationList = 5E06E8972D44FB7400B8630E /* Build configuration list for PBXProject "Craft Silicon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E06E8932D44FB7400B8630E;
+			productRefGroup = 5E06E89D2D44FB7400B8630E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E06E89B2D44FB7400B8630E /* Craft Silicon */,
+				5E06E8AB2D44FB7600B8630E /* Craft SiliconTests */,
+				5E06E8B52D44FB7600B8630E /* Craft SiliconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E06E89A2D44FB7400B8630E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E06E8A72D44FB7600B8630E /* Preview Assets.xcassets in Resources */,
+				5E06E8A42D44FB7600B8630E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E06E8AA2D44FB7600B8630E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E06E8B42D44FB7600B8630E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E06E8982D44FB7400B8630E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E06E8E52D450E4A00B8630E /* HttpUtils.swift in Sources */,
+				5E06E8F32D451EF000B8630E /* HomeView.swift in Sources */,
+				5E06E8F82D45234900B8630E /* View.swift in Sources */,
+				5E06E8EF2D451AF300B8630E /* WeatherViewModel.swift in Sources */,
+				5E06E8E72D45173D00B8630E /* ErrorMapperUtils.swift in Sources */,
+				A35E590C2D464C1D00DC355F /* CoreDataError.swift in Sources */,
+				5E06E8FA2D455ADD00B8630E /* UtilFunctions.swift in Sources */,
+				5E06E8E02D450C4100B8630E /* WeatherResponse.swift in Sources */,
+				5E06E8ED2D451A0700B8630E /* GetWeatherUseCase.swift in Sources */,
+				5E06E8A02D44FB7400B8630E /* Craft_SiliconApp.swift in Sources */,
+				5E06E8E92D4518DD00B8630E /* GetWeatherProtocol.swift in Sources */,
+				5E06E8D02D44FD0B00B8630E /* Constants.swift in Sources */,
+				5E06E8F12D451BFB00B8630E /* FetchState.swift in Sources */,
+				5E06E8EB2D45192D00B8630E /* GetWeatherRepository.swift in Sources */,
+				5E06E9062D4675FE00B8630E /* CoreDataModel.xcdatamodeld in Sources */,
+				5E06E8DE2D45049900B8630E /* WeatherRemoteDataSource.swift in Sources */,
+				5E06E8E32D450D8B00B8630E /* APIError.swift in Sources */,
+				A35E59112D464D3700DC355F /* WeatherLocalDataSource.swift in Sources */,
+				5E06E8F52D451F7400B8630E /* RootView.swift in Sources */,
+				A35E59162D464D7900DC355F /* CoreDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E06E8A82D44FB7600B8630E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35E59122D464D3700DC355F /* WeatherLocalDataSource.swift in Sources */,
+				5E06E8B12D44FB7600B8630E /* Craft_SiliconTests.swift in Sources */,
+				A35E590D2D464C1D00DC355F /* CoreDataError.swift in Sources */,
+				A35E59172D464D7900DC355F /* CoreDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E06E8B22D44FB7600B8630E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E06E8BB2D44FB7600B8630E /* Craft_SiliconUITests.swift in Sources */,
+				5E06E8BD2D44FB7600B8630E /* Craft_SiliconUITestsLaunchTests.swift in Sources */,
+				A35E590E2D464C1D00DC355F /* CoreDataError.swift in Sources */,
+				A35E59132D464D3700DC355F /* WeatherLocalDataSource.swift in Sources */,
+				A35E59182D464D7900DC355F /* CoreDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E06E8AE2D44FB7600B8630E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E06E89B2D44FB7400B8630E /* Craft Silicon */;
+			targetProxy = 5E06E8AD2D44FB7600B8630E /* PBXContainerItemProxy */;
+		};
+		5E06E8B82D44FB7600B8630E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E06E89B2D44FB7400B8630E /* Craft Silicon */;
+			targetProxy = 5E06E8B72D44FB7600B8630E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5E06E8BE2D44FB7600B8630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E06E8BF2D44FB7600B8630E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E06E8C12D44FB7600B8630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Craft Silicon/Preview Content\"";
+				DEVELOPMENT_TEAM = H32ZYL9A98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.craftsilicon.Craft-Silicon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E06E8C22D44FB7600B8630E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Craft Silicon/Preview Content\"";
+				DEVELOPMENT_TEAM = H32ZYL9A98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.craftsilicon.Craft-Silicon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E06E8C42D44FB7600B8630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H32ZYL9A98;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.craftsilicon.Craft-SiliconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craft Silicon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Craft Silicon";
+			};
+			name = Debug;
+		};
+		5E06E8C52D44FB7600B8630E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H32ZYL9A98;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.craftsilicon.Craft-SiliconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craft Silicon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Craft Silicon";
+			};
+			name = Release;
+		};
+		5E06E8C72D44FB7600B8630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H32ZYL9A98;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.craftsilicon.Craft-SiliconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Craft Silicon";
+			};
+			name = Debug;
+		};
+		5E06E8C82D44FB7600B8630E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H32ZYL9A98;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.craftsilicon.Craft-SiliconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Craft Silicon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E06E8972D44FB7400B8630E /* Build configuration list for PBXProject "Craft Silicon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E06E8BE2D44FB7600B8630E /* Debug */,
+				5E06E8BF2D44FB7600B8630E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E06E8C02D44FB7600B8630E /* Build configuration list for PBXNativeTarget "Craft Silicon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E06E8C12D44FB7600B8630E /* Debug */,
+				5E06E8C22D44FB7600B8630E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E06E8C32D44FB7600B8630E /* Build configuration list for PBXNativeTarget "Craft SiliconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E06E8C42D44FB7600B8630E /* Debug */,
+				5E06E8C52D44FB7600B8630E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E06E8C62D44FB7600B8630E /* Build configuration list for PBXNativeTarget "Craft SiliconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E06E8C72D44FB7600B8630E /* Debug */,
+				5E06E8C82D44FB7600B8630E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E06E9042D4675FE00B8630E /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E06E9052D4675FE00B8630E /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 5E06E9052D4675FE00B8630E /* CoreDataModel.xcdatamodel */;
+			name = CoreDataModel.xcdatamodeld;
+			path = "/Users/gideonrotich/Downloads/Craft Silicon/CoreDataModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5E06E8942D44FB7400B8630E /* Project object */;
+}
