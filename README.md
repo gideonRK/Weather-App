@@ -6,7 +6,7 @@ Weather app built using Swift UI
 
 <br>
 
-| HOME | Weath | Forec| Error |
+| |  | |  |
 | ----- | ---- | ----- | ---- |
-| ![Weather](Screenshots/one.png) | ![Predict](Screenshots/two.png) | ![Predictions](Screenshots/three.png) | ![Live](Screenshots/four.png) |
+| ![Wea](Screenshots/one.png) | ![Pred](Screenshots/two.png) | ![Pred](Screenshots/three.png) | ![Live](Screenshots/four.png) |
 
