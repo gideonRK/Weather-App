@@ -28,5 +28,5 @@ Music player app built with Kotlin
 
 | HOME | Player | Search | Predictions |
 | ------ | ----- | ------ | ----- |
-| ![Rankings](screenshot/one.png) | ![Predict](screenshot/two.png) | ![Predictions](screenshot/three.png) | ![Live](screenshot/four.png) |
+| ![Weather](Screenshots/one.png) | ![Predict](screenshot/two.png) | ![Predictions](screenshot/three.png) | ![Live](screenshot/four.png) |
 
