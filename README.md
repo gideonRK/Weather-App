@@ -6,7 +6,7 @@ Weather app built using Swift UI
 
 <br>
 
-|Weather | Details |Rain | Error |
-| -- | -- | -- | -- |
+|Weather | Details  |Rain  | Error  |
+| -- | --  | --  | --  |
 | ![Wea](Screenshots/one.png) | ![Pred](Screenshots/two.png) | ![Pred](Screenshots/three.png) | ![Live](Screenshots/four.png) |
 
